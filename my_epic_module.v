@@ -1,9 +1,12 @@
 module top (
 	output reg [8:0] out,
-	input [7:0] in,
-	input clock
+	input wire [7:0] in,
+	input wire clock
 );
+	reg [7:0] in_register;
+
 	always @(posedge clock) begin
-		assign out = in << 1;
+		in_register = in;
+		out = in_register << 1;
 	end
 endmodule
