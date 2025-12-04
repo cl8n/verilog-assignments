@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+iverilog -o out.vvp -s grade_my_epic_module_cuz_im_a_ta_now_just_like_francisco_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay_yay my_epic_module*
+
+./out.vvp
+
+surfer out.vcd
