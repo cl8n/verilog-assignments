@@ -6,7 +6,7 @@ module top (
 	reg [7:0] in_register;
 
 	always @(posedge clock) begin
-		in_register = in;
-		out = in_register << 1;
+		in_register <= in;
+		out <= in_register << 1;
 	end
 endmodule
