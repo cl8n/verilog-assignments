@@ -1,5 +1,7 @@
 francisco said i have to do his assignments, idk what any of this is,
 
+![](youshouldbeabletosolvethis.png)
+
 ## tools
 
 - [icarus verilog](https://steveicarus.github.io/iverilog/) (compiler & simulator)
