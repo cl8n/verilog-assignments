@@ -10,4 +10,5 @@ francisco said i have to do his assignments, idk what any of this is,
 ## assignments
 
 - [assignment 1](01): multiply input by 2
-- [assignment 2](02): multiply input by 2 w/ clock signal
+- [assignment 2](02): clock signal
+- [assignment 3](03): case statement
