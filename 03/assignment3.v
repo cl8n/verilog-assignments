@@ -7,13 +7,12 @@ module assignment3 (
 	reg [8:0] out_register; assign out = out_register;
 	reg [7:0] in_register;
 
-	function integer count_ones (input [7:0] in);
+	function [8:0] count_ones (input [7:0] in);
 		begin
 			count_ones = 0;
 
-			for (integer i = 0; i < 8; i++) begin
-				if (in[i] == 1'b1)
-					count_ones++;
+			for (integer i = 0; i < 8; i = i + 1) begin
+				count_ones = count_ones + in[i];
 			end
 		end
 	endfunction
@@ -22,10 +21,10 @@ module assignment3 (
 		in_register <= in;
 
 		case (op)
-			2'b00: out_register <= in_register;
-			2'b01: out_register <= in_register + 2;
-			2'b10: out_register <= in_register * 2;
-			2'b11: out_register <= count_ones(in_register);
+			0: out_register <= in_register;
+			1: out_register <= in_register + 2;
+			2: out_register <= in_register * 2;
+			3: out_register <= count_ones(in_register);
 		endcase
 	end
 endmodule
