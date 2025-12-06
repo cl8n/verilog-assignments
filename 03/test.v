@@ -11,7 +11,7 @@ module test;
 		begin
 			@(posedge clock); #1;
 
-			if (out == expected_out)
+			if (out === expected_out)
 				$display("PASS: %d", expected_out);
 			else
 				$display("FAIL: Expected %d, Actual %d", expected_out, out);
@@ -20,8 +20,7 @@ module test;
 
 	initial begin
 		in = 0; op = 0;
-		@(posedge clock); #1;
-		// expect_after_clock(9'bX);
+		expect_after_clock(9'b0XXXXXXXX);
 
 		// in is buffered for one clock cycle
 		in = 9;
