@@ -14,3 +14,4 @@ francisco said i have to do his assignments, idk what any of this is,
 - [assignment 2](02): clock signal
 - [assignment 3](03): case statement
 - [assignment 4](04): basic fsm
+- [assignment 5](05): shift register
